@@ -23,6 +23,11 @@
 		C8BB126E1D1D97FD00E7B937 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB126D1D1D97FD00E7B937 /* ContactViewController.swift */; };
 		C8BB12701D1D984500E7B937 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB126F1D1D984500E7B937 /* DonateViewController.swift */; };
 		C8BB12721D1D989D00E7B937 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB12711D1D989D00E7B937 /* InfoViewController.swift */; };
+		C8BFB3191D45850A009FF298 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BFB3151D45850A009FF298 /* Fabric.framework */; };
+		C8BFB31A1D45850B009FF298 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BFB3161D45850A009FF298 /* TwitterKit.framework */; };
+		C8BFB31B1D45850B009FF298 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8BFB3171D45850A009FF298 /* TwitterKitResources.bundle */; };
+		C8BFB31C1D45850B009FF298 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BFB3181D45850A009FF298 /* TwitterCore.framework */; };
+		C8BFB31E1D458855009FF298 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFB31D1D458853009FF298 /* TwitterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		C8BB126D1D1D97FD00E7B937 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C8BB126F1D1D984500E7B937 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		C8BB12711D1D989D00E7B937 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C8BFB3151D45850A009FF298 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C8BFB3161D45850A009FF298 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		C8BFB3171D45850A009FF298 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		C8BFB3181D45850A009FF298 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		C8BFB31D1D458853009FF298 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BFB3191D45850A009FF298 /* Fabric.framework in Frameworks */,
+				C8BFB31C1D45850B009FF298 /* TwitterCore.framework in Frameworks */,
+				C8BFB31A1D45850B009FF298 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +143,11 @@
 				C85079551D2D83B1000BA862 /* DetailViewController.swift */,
 				C85079571D2D8556000BA862 /* Event.swift */,
 				C85079591D2D8792000BA862 /* EventList.swift */,
+				C8BFB31D1D458853009FF298 /* TwitterViewController.swift */,
+				C8BFB3151D45850A009FF298 /* Fabric.framework */,
+				C8BFB3161D45850A009FF298 /* TwitterKit.framework */,
+				C8BFB3171D45850A009FF298 /* TwitterKitResources.bundle */,
+				C8BFB3181D45850A009FF298 /* TwitterCore.framework */,
 			);
 			path = "Nonmember Band App";
 			sourceTree = "<group>";
@@ -162,6 +180,7 @@
 				C8BB12361D1CCBC200E7B937 /* Sources */,
 				C8BB12371D1CCBC200E7B937 /* Frameworks */,
 				C8BB12381D1CCBC200E7B937 /* Resources */,
+				C8B8F4111D445D5C00C85949 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -259,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BFB31B1D45850B009FF298 /* TwitterKitResources.bundle in Resources */,
 				C8BB12481D1CCBC200E7B937 /* LaunchScreen.storyboard in Resources */,
 				C8BB12451D1CCBC200E7B937 /* Assets.xcassets in Resources */,
 				C8BB12431D1CCBC200E7B937 /* Main.storyboard in Resources */,
@@ -281,11 +301,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C8B8F4111D445D5C00C85949 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 9a481d1689708bda50e5eee8befae62329b40faa 5d699cc7207e2a83661616386912734054857c0454f446ccb16c04aa9b21e830";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8BB12361D1CCBC200E7B937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BFB31E1D458855009FF298 /* TwitterViewController.swift in Sources */,
 				C85079561D2D83B2000BA862 /* DetailViewController.swift in Sources */,
 				C8A108E81D274DEC005C6F0C /* TableViewController.swift in Sources */,
 				C850795A1D2D8792000BA862 /* EventList.swift in Sources */,
@@ -440,6 +477,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nonmember",
+					Band,
+					App,
+					"$(PROJECT_DIR)/Nonmember",
+					Band,
+					App,
+				);
 				INFOPLIST_FILE = "Nonmember Band App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-App";
@@ -451,6 +497,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nonmember",
+					Band,
+					App,
+					"$(PROJECT_DIR)/Nonmember",
+					Band,
+					App,
+				);
 				INFOPLIST_FILE = "Nonmember Band App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-App";
