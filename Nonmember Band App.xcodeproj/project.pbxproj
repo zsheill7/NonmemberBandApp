@@ -11,6 +11,11 @@
 		C85079561D2D83B2000BA862 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85079551D2D83B1000BA862 /* DetailViewController.swift */; };
 		C85079581D2D8556000BA862 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85079571D2D8556000BA862 /* Event.swift */; };
 		C850795A1D2D8792000BA862 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85079591D2D8792000BA862 /* EventList.swift */; };
+		C8813DDE1D53002300BB408D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8813DDA1D53002300BB408D /* Fabric.framework */; };
+		C8813DDF1D53002300BB408D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8813DDB1D53002300BB408D /* TwitterKit.framework */; };
+		C8813DE01D53002300BB408D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8813DDC1D53002300BB408D /* TwitterKitResources.bundle */; };
+		C8813DE11D53002300BB408D /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8813DDD1D53002300BB408D /* TwitterCore.framework */; };
+		C8813DE31D53052E00BB408D /* SearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8813DE21D53052E00BB408D /* SearchTimelineViewController.swift */; };
 		C8A108E81D274DEC005C6F0C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A108E71D274DEC005C6F0C /* TableViewController.swift */; };
 		C8A108EA1D2843C4005C6F0C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A108E91D2843C3005C6F0C /* CalendarViewController.swift */; };
 		C8BB123E1D1CCBC200E7B937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB123D1D1CCBC200E7B937 /* AppDelegate.swift */; };
@@ -23,11 +28,8 @@
 		C8BB126E1D1D97FD00E7B937 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB126D1D1D97FD00E7B937 /* ContactViewController.swift */; };
 		C8BB12701D1D984500E7B937 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB126F1D1D984500E7B937 /* DonateViewController.swift */; };
 		C8BB12721D1D989D00E7B937 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB12711D1D989D00E7B937 /* InfoViewController.swift */; };
-		C8BFB3191D45850A009FF298 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BFB3151D45850A009FF298 /* Fabric.framework */; };
-		C8BFB31A1D45850B009FF298 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BFB3161D45850A009FF298 /* TwitterKit.framework */; };
-		C8BFB31B1D45850B009FF298 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8BFB3171D45850A009FF298 /* TwitterKitResources.bundle */; };
-		C8BFB31C1D45850B009FF298 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BFB3181D45850A009FF298 /* TwitterCore.framework */; };
 		C8BFB31E1D458855009FF298 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFB31D1D458853009FF298 /* TwitterViewController.swift */; };
+		C8D225271D53B86A007811DC /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D225261D53B86A007811DC /* UpcomingEventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,11 @@
 		C85079551D2D83B1000BA862 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C85079571D2D8556000BA862 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C85079591D2D8792000BA862 /* EventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		C8813DDA1D53002300BB408D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		C8813DDB1D53002300BB408D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		C8813DDC1D53002300BB408D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		C8813DDD1D53002300BB408D /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		C8813DE21D53052E00BB408D /* SearchTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTimelineViewController.swift; sourceTree = "<group>"; };
 		C8A108E71D274DEC005C6F0C /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C8A108E91D2843C3005C6F0C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		C8BB123A1D1CCBC200E7B937 /* Nonmember Band App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nonmember Band App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,11 +77,8 @@
 		C8BB126D1D1D97FD00E7B937 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C8BB126F1D1D984500E7B937 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		C8BB12711D1D989D00E7B937 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		C8BFB3151D45850A009FF298 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		C8BFB3161D45850A009FF298 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		C8BFB3171D45850A009FF298 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
-		C8BFB3181D45850A009FF298 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		C8BFB31D1D458853009FF298 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		C8D225261D53B86A007811DC /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BFB3191D45850A009FF298 /* Fabric.framework in Frameworks */,
-				C8BFB31C1D45850B009FF298 /* TwitterCore.framework in Frameworks */,
-				C8BFB31A1D45850B009FF298 /* TwitterKit.framework in Frameworks */,
+				C8813DDE1D53002300BB408D /* Fabric.framework in Frameworks */,
+				C8813DE11D53002300BB408D /* TwitterCore.framework in Frameworks */,
+				C8813DDF1D53002300BB408D /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +148,12 @@
 				C85079571D2D8556000BA862 /* Event.swift */,
 				C85079591D2D8792000BA862 /* EventList.swift */,
 				C8BFB31D1D458853009FF298 /* TwitterViewController.swift */,
-				C8BFB3151D45850A009FF298 /* Fabric.framework */,
-				C8BFB3161D45850A009FF298 /* TwitterKit.framework */,
-				C8BFB3171D45850A009FF298 /* TwitterKitResources.bundle */,
-				C8BFB3181D45850A009FF298 /* TwitterCore.framework */,
+				C8813DE21D53052E00BB408D /* SearchTimelineViewController.swift */,
+				C8D225261D53B86A007811DC /* UpcomingEventsViewController.swift */,
+				C8813DDA1D53002300BB408D /* Fabric.framework */,
+				C8813DDB1D53002300BB408D /* TwitterKit.framework */,
+				C8813DDC1D53002300BB408D /* TwitterKitResources.bundle */,
+				C8813DDD1D53002300BB408D /* TwitterCore.framework */,
 			);
 			path = "Nonmember Band App";
 			sourceTree = "<group>";
@@ -278,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BFB31B1D45850B009FF298 /* TwitterKitResources.bundle in Resources */,
+				C8813DE01D53002300BB408D /* TwitterKitResources.bundle in Resources */,
 				C8BB12481D1CCBC200E7B937 /* LaunchScreen.storyboard in Resources */,
 				C8BB12451D1CCBC200E7B937 /* Assets.xcassets in Resources */,
 				C8BB12431D1CCBC200E7B937 /* Main.storyboard in Resources */,
@@ -323,6 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8BFB31E1D458855009FF298 /* TwitterViewController.swift in Sources */,
+				C8D225271D53B86A007811DC /* UpcomingEventsViewController.swift in Sources */,
+				C8813DE31D53052E00BB408D /* SearchTimelineViewController.swift in Sources */,
 				C85079561D2D83B2000BA862 /* DetailViewController.swift in Sources */,
 				C8A108E81D274DEC005C6F0C /* TableViewController.swift in Sources */,
 				C850795A1D2D8792000BA862 /* EventList.swift in Sources */,
@@ -485,6 +493,7 @@
 					"$(PROJECT_DIR)/Nonmember",
 					Band,
 					App,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Nonmember Band App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,6 +514,7 @@
 					"$(PROJECT_DIR)/Nonmember",
 					Band,
 					App,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Nonmember Band App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

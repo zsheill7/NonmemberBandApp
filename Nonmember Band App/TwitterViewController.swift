@@ -22,25 +22,23 @@ class TwitterViewController: UIViewController {
         button.center = view.center
         button.addTarget(self, action: #selector(showTimeline), forControlEvents: [.TouchUpInside])
         view.addSubview(button)
+        
+        
 
     }
     
     
     
     func showTimeline() {
-        // Create an API client and data source to fetch Tweets for the timeline
         let client = TWTRAPIClient()
-        //TODO: Replace with your collection id or a different data source
-        let dataSource = TWTRCollectionTimelineDataSource(collectionID: "539487832448843776", APIClient: client)
-
+        let dataSource = TWTRUserTimelineDataSource(screenName: "@MIHSBand", APIClient: client)
         let timelineViewControlller = TWTRTimelineViewController(dataSource: dataSource)
-
-        let button = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(dismissTimeline))
-        timelineViewControlller.navigationItem.leftBarButtonItem = button
-
+        
+        
         let navigationController = UINavigationController(rootViewController: timelineViewControlller)
         showDetailViewController(navigationController, sender: self)
-    }
+
+            }
     func dismissTimeline() {
         dismissViewControllerAnimated(true, completion: nil)
     }

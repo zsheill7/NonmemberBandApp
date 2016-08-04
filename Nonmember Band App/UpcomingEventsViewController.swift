@@ -1,33 +1,23 @@
 //
-//  DonateViewController.swift
+//  UpcomingEventsViewController.swift
 //  Nonmember Band App
 //
-//  Created by Zoe Sheill on 6/24/16.
+//  Created by Zoe on 8/4/16.
 //  Copyright © 2016 ClassroomM. All rights reserved.
 //
 
 import UIKit
 
-class DonateViewController: UIViewController {
+class UpcomingEventsViewController: UIViewController {
 
-
-    
     @IBOutlet weak var webView: UIWebView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        /*var html = "<p><a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XYZRUJWJCF3SN\"><img src=\"https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif\" alt=\"\" /></a></p>"
-        
-        donateWebView.loadHTMLString(html, baseURL: nil)*/
         
         
-      
-            
-            
         let attemptedUrl = NSURL(string: "https://misbb.wordpress.com/")
-        
+       
         if let url = attemptedUrl {
             
             let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) in
@@ -38,14 +28,14 @@ class DonateViewController: UIViewController {
                     
                     let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
                     
-                    let websiteArray = webContent!.componentsSeparatedByString("<meta name=\"title\" content=\"Donate | Mercer Island School District Bands on WordPress.com\" />")
+                    let websiteArray = webContent!.componentsSeparatedByString("<a href=\"https://misbb.wordpress.com/2016/05/19/mihs-marching-band-raincoat-drive/#respond\"><span class=\"leave-reply\">Reply</span></a>")
                     
                     if websiteArray.count > 1 {
                         
-                        let upcomingArray = websiteArray[1].componentsSeparatedByString("<footer class=\"entry-meta\">")
+                        let upcomingArray = websiteArray[1].componentsSeparatedByString("<hr />")
                         
                         if upcomingArray.count > 1 {
-                            
+                           
                             
                             let upcomingEvents = upcomingArray[0]
                             
@@ -63,17 +53,14 @@ class DonateViewController: UIViewController {
                     print("error in block")
                 }
             })
+                
             
-            
-            task.resume()
+        task.resume()
         } else {
             
             print("error")
         }
-        
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
