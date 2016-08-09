@@ -26,7 +26,7 @@ class DonateViewController: UIViewController {
       
             
             
-        let attemptedUrl = NSURL(string: "https://misbb.wordpress.com/")
+        let attemptedUrl = NSURL(string: "https://misbb.wordpress.com/donate/")
         
         if let url = attemptedUrl {
             
@@ -38,22 +38,25 @@ class DonateViewController: UIViewController {
                     
                     let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
                     
-                    let websiteArray = webContent!.componentsSeparatedByString("<meta name=\"title\" content=\"Donate | Mercer Island School District Bands on WordPress.com\" />")
+                    let websiteArray = webContent!.componentsSeparatedByString("<div id=\"content\" role=\"main\">")
                     
                     if websiteArray.count > 1 {
                         
-                        let upcomingArray = websiteArray[1].componentsSeparatedByString("<footer class=\"entry-meta\">")
+                        let upcomingArray = websiteArray[1].componentsSeparatedByString("<div id=\"comments\">")
                         
                         if upcomingArray.count > 1 {
                             
                             
                             let upcomingEvents = upcomingArray[0]
-                            
+                            print(upcomingEvents)
                             dispatch_async(dispatch_get_main_queue(), {
                                 self.webView.loadHTMLString(upcomingEvents, baseURL: nil)
+                                print(upcomingEvents)
+                            
                             })
                         } else {
                             print("upcomingArray.count <= 1")
+                            
                         }
                     } else {
                         print("websiteArray.count <= 1")
