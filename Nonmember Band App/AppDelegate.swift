@@ -23,12 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Twitter.self])
         
        
-        let rootViewController = window!.rootViewController as! UITabBarController
+        /*let rootViewController = window!.rootViewController as! UITabBarController
         
         
         let navigationViewController = rootViewController.viewControllers![3] as! UINavigationController
         let photosViewController = navigationViewController.topViewController as! PhotosViewController
-        photosViewController.store = PhotoStore()
+        photosViewController.store = PhotoStore()*/
         
 
         return true

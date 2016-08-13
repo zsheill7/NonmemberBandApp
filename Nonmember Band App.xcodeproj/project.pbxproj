@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82B3B3C1D5EC1C30037FDC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82B3B3B1D5EC1C30037FDC2 /* Main.storyboard */; };
 		C85079541D2CB39D000BA862 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85079531D2CB39D000BA862 /* tableViewCell.swift */; };
 		C85079561D2D83B2000BA862 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85079551D2D83B1000BA862 /* DetailViewController.swift */; };
 		C85079581D2D8556000BA862 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85079571D2D8556000BA862 /* Event.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C82B3B3B1D5EC1C30037FDC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C85079531D2CB39D000BA862 /* tableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
 		C85079551D2D83B1000BA862 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C85079571D2D8556000BA862 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				C8BB123D1D1CCBC200E7B937 /* AppDelegate.swift */,
 				C8BB123F1D1CCBC200E7B937 /* MainViewController.swift */,
+				C82B3B3B1D5EC1C30037FDC2 /* Main.storyboard */,
 				C8BB12411D1CCBC200E7B937 /* Nonmember.storyboard */,
 				C8BB12441D1CCBC200E7B937 /* Assets.xcassets */,
 				C8BB12461D1CCBC200E7B937 /* LaunchScreen.storyboard */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8813DE01D53002300BB408D /* TwitterKitResources.bundle in Resources */,
+				C82B3B3C1D5EC1C30037FDC2 /* Main.storyboard in Resources */,
 				C8BB12481D1CCBC200E7B937 /* LaunchScreen.storyboard in Resources */,
 				C8BB12451D1CCBC200E7B937 /* Assets.xcassets in Resources */,
 				C8BB12431D1CCBC200E7B937 /* Nonmember.storyboard in Resources */,
