@@ -21,6 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Fabric.with([Twitter.self])
+        
+       
+        let rootViewController = window!.rootViewController as! UITabBarController
+        
+        
+        let navigationViewController = rootViewController.viewControllers![3] as! UINavigationController
+        let photosViewController = navigationViewController.topViewController as! PhotosViewController
+        photosViewController.store = PhotoStore()
+        
 
         return true
     }
