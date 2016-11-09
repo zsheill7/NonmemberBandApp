@@ -24,7 +24,7 @@ class EventList {
             if error == nil {
                 let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
                 
-                var urlContentString = String(urlContent)
+                let urlContentString = String(urlContent)
                 print(urlContent)
                 
                 /* for i in 0 ..< urlContent!.length {

@@ -289,15 +289,18 @@
 					C8BB12391D1CCBC200E7B937 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = G9EL47UXZH;
+						LastSwiftMigration = 0810;
 					};
 					C8BB124D1D1CCBC300E7B937 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = G9EL47UXZH;
+						LastSwiftMigration = 0810;
 						TestTargetID = C8BB12391D1CCBC200E7B937;
 					};
 					C8BB12581D1CCBC300E7B937 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = G9EL47UXZH;
+						LastSwiftMigration = 0810;
 						TestTargetID = C8BB12391D1CCBC200E7B937;
 					};
 				};
@@ -551,6 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -572,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -583,6 +588,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nonmember Band App.app/Nonmember Band App";
 			};
 			name = Debug;
@@ -595,6 +601,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nonmember Band App.app/Nonmember Band App";
 			};
 			name = Release;
@@ -606,6 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Nonmember Band App";
 			};
 			name = Debug;
@@ -617,6 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ClassroomM.Nonmember-Band-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Nonmember Band App";
 			};
 			name = Release;

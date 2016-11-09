@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             if error == nil {
                 let urlContent = NSString(data: data!, encoding: NSUTF8StringEncoding)
                 
-                var urlContentString = String(urlContent)
+                let urlContentString = String(urlContent)
                 //print(urlContent)
                 print(urlContentString.componentsSeparatedByString("<p><span style=\"color:#0000ff;\""))
                 
