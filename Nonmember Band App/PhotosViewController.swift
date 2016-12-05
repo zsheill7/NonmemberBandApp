@@ -84,6 +84,13 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
         return 1 
     }
     
+    @IBAction func homeButtonTapped(sender: AnyObject) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialVC = mainStoryboard.instantiateViewControllerWithIdentifier("initialVC")
+        
+        self.presentViewController(initialVC, animated: true, completion: nil)
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showPhoto" {

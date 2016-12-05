@@ -40,3 +40,4 @@ class CalendarViewController: UIViewController {
     */
 
 }
+@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
