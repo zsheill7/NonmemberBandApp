@@ -17,10 +17,10 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     func updateWithImage(image: UIImage?) {
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
         if let imageToDisplay = image {
-            activityIndicator.stopAnimating()
+            //activityIndicator.stopAnimating()
             imageView.image = imageToDisplay
         } else {
-            activityIndicator.startAnimating()
+            //activityIndicator.startAnimating()
             imageView.image = nil
         }
     }

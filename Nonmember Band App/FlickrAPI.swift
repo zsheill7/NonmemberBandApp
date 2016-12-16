@@ -24,7 +24,7 @@ enum FlickrError: ErrorType {
 }
 
 struct FlickrAPI {
-    private static let baseURLString = /*"https://api.flickr.com/services/rest"*/"https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=3a2c32744feeceab3bfd6773c36713b8&photoset_id=72157666361785820&user_id=95526288%40N06&extras=url_h%2Cdate_taken&per_page=&format=json&nojsoncallback=1&auth_token=72157671107922980-803ca3599c1fac97&api_sig=1dcc313e413c29194de04e7b0cb5d750"
+    private static let baseURLString = /*"https://api.flickr.com/services/rest"*/"https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=75c0650a0d88e60576c3fe9fad399649&photoset_id=72157666361785820&user_id=95526288%40N06&extras=url_h%2Cdate_taken&format=json&nojsoncallback=1&auth_token=72157677820565746-60c40ee63a5404fe&api_sig=3c275569bb6d47b369bf632d6cbc03b0"
  
     /*"https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=2ec50c2435e7567b0f3d4ae7f9380a47&photoset_id=72157666361785820&user_id=95526288%40N06&extras=url_h%2Cdate_taken&per_page=&format=json&nojsoncallback=1&auth_token=72157671107922980-803ca3599c1fac97&api_sig=1dcc313e413c29194de04e7b0cb5d750"*/
     

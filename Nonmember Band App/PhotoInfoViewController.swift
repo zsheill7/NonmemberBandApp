@@ -16,6 +16,7 @@ class PhotoInfoViewController: UIViewController {
             navigationItem.title = photo.title
         }
     }
+    @IBOutlet weak var urlTextView: UITextView!
     var store: PhotoStore!
     
     override func viewDidLoad() {
