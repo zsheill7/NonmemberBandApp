@@ -27,6 +27,7 @@ class PhotoInfoViewController: UIViewController {
             case let .Success(image):
                 NSOperationQueue.mainQueue().addOperationWithBlock() {
                     self.imageView.image = image
+                    self.urlTextView.text = String(self.photo.remoteURL)
                 }
             case let .Failure(error):
                 print("Error fetching image for photo: \(error)")

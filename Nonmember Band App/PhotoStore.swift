@@ -65,7 +65,7 @@ class PhotoStore {
     
     func processImageRequest(data data: NSData?, error: NSError?) -> ImageResult {
         guard let imageData = data,
-            image = UIImage(data: imageData) else {
+            let image = UIImage(data: imageData) else {
             //Couldn't create image
                 
                 if data == nil {

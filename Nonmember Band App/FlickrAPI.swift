@@ -87,8 +87,8 @@ struct FlickrAPI {
             
             guard let
                 jsonDictionary = jsonObject as? [NSObject:AnyObject],
-                photos = jsonDictionary["photoset"] as? [String:AnyObject],
-                photosArray = photos["photo"] as? [[String:AnyObject]] else {
+                let photos = jsonDictionary["photoset"] as? [String:AnyObject],
+                let photosArray = photos["photo"] as? [[String:AnyObject]] else {
                     
                     return .Failure(FlickrError.InvalidJSONData)
                     
@@ -115,11 +115,11 @@ struct FlickrAPI {
     private static func photoFromJSONObject(json: [String: AnyObject]) -> Photo? {
         guard let
             photoID = json["id"] as? String,
-            title = json["title"] as? String,
-            dateString = json["datetaken"] as? String,
-            photoURLString = json["url_h"] as? String,
-            url = NSURL(string: photoURLString),
-            dateTaken = dateFormatter.dateFromString(dateString) else {
+            let title = json["title"] as? String,
+            let dateString = json["datetaken"] as? String,
+            let photoURLString = json["url_h"] as? String,
+            let url = NSURL(string: photoURLString),
+            let dateTaken = dateFormatter.dateFromString(dateString) else {
                 
                 return nil
         }
